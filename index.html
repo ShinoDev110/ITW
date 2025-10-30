@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>BEATS by <your-friend></title>
+    <meta name="description" content="Loops and Heat"/>
+    <link rel="stylesheet" href="resources/styles.css">
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <img class="avatar" src="assets/cover.png" alt="Artist avatar">
+        <div class="title">
+            <h1><span id="artistName">Icy Trunks</span> — Loops & Beats</h1>
+            <div class="tag">Producer • Wizard • FL-Whisperer</div>
+        </div>
+        <a class="chip" href="mailto:icy@trunks.com" title="Email">
+            <svg viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.6">
+                <path d="M4 6h16v12H4z"/>
+                <path d="m22 7-10 7L2 7"/>
+            </svg>
+            <span>Email</span>
+        </a>
+    </header>
+
+    <section class="card">
+        <div class="player" id="player">
+            <div>
+                <div class="cover" id="cover"></div>
+            </div>
+            <div class="meta">
+                <div class="name" id="nowTitle">—</div>
+                <div class="sub" id="nowMeta">—</div>
+            </div>
+        </div>
+
+        <div class="controls">
+            <button class="btn" id="prev" aria-label="Previous">⏮</button>
+            <button class="btn primary" id="play" aria-label="Play/Pause">▶</button>
+            <button class="btn" id="next" aria-label="Next">⏭</button>
+            <div class="vol">
+                <svg aria-hidden="true" viewBox="0 0 24 24" width="18" height="18">
+                    <path fill="currentColor" d="M3 22h2V2H3zm4 0h2V10H7zm4 0h2V6h-2zm4 0h2V14h-2zm4 0h2V4h-2z"/>
+                </svg>
+                <input id="volume" type="range" min="0" max="1" step="0.01" value="0.9" title="Volume"/>
+            </div>
+        </div>
+
+        <div class="bar">
+            <div class="time" id="cur">0:00</div>
+            <div class="seek" id="seek">
+                <div class="fill" id="fill"></div>
+            </div>
+            <div class="time" id="dur">0:00</div>
+        </div>
+
+        <div class="playlist" id="list"></div>
+    </section>
+
+    <section class="socials">
+        <a class="chip" href="https://www.instagram.com/icytrunks" target="_blank" rel="noopener">Instagram</a>
+        <a class="chip" href="https://www.youtube.com/@IcyTrunksBeats" target="_blank" rel="noopener">YouTube</a>
+        <a class="chip" href="https://www.tiktok.com/@icytrunks" target="_blank" rel="noopener">TikTok</a>
+        <a class="chip" href="https://soundcloud.com/icy_trunks" target="_blank" rel="noopener">SoundCloud</a>
+        <a class="chip" href="https://open.spotify.com/artist/5OhGZJuOgBn7eqDEIm2w2O?si=3isMfjAgRUCKqtx9HQWjfQ" target="_blank" rel="noopener">Spotify</a>
+        <a class="chip" href="mailto:icy@trunks.com">Email</a>
+    </section>
+
+    <footer>© <span id="year"></span> <span id="artistName2">Icy Trunks</span></footer>
+</div>
+
+<audio id="audio"></audio>
+<script type="module" src="js/app.js"></script>
+</body>
+</html>
